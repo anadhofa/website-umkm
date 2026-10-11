@@ -8,21 +8,25 @@
   </head>
   <body>
     <a class="skip-link" href="#konten">Lewati ke konten utama</a>
-    <header class="site-header">
-      <nav class="nav" aria-label="Navigasi utama">
-        <a class="brand" href="index.html#profil">Cangkir Jeda</a>
-        <ul>
-          <li><a href="index.html#profil">Beranda</a></li>
-          <li><a href="tentang.html">Tentang Kami</a></li>
-          <li><a href="galeri.html">Galeri</a></li>
-          <li><a aria-current="page" href="produk.html">Produk</a></li>
-          <li><a href="kontak.html">Kontak</a></li>
-        </ul>
+    <div class="sticky-navigation">
+      <header class="site-header">
+        <nav class="nav" aria-label="Navigasi utama">
+          <a class="brand" href="index.html#profil">Cangkir Jeda</a>
+          <ul>
+            <li><a href="index.html#profil">Beranda</a></li>
+            <li><a href="tentang.html">Tentang Kami</a></li>
+            <li><a href="galeri.html">Galeri</a></li>
+            <li><a aria-current="page" href="produk.html">Produk</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+          </ul>
+        </nav>
+      </header>
+      <nav class="subnav" aria-label="Navigasi halaman Produk">
+        <a href="produk.html#kategori-title">Kategori Produk</a>
+        <a href="produk.html#produk-pilihan-title">Produk Pilihan</a>
+        <a href="produk.html#harga-title">Daftar Harga</a>
       </nav>
-    </header>
-    <nav class="subnav" aria-label="Navigasi halaman Produk">
-      <a href="produk.html#harga-title">Daftar Harga</a>
-    </nav>
+    </div>
     <main id="konten" class="page">
       <h1>Produk Cangkir Jeda</h1>
       <p></p>
@@ -35,6 +39,52 @@
           <li>Chocolate</li>
           <li>Latte</li>
         </ul>
+      </section>
+      <section
+        class="product-selection"
+        aria-labelledby="produk-pilihan-title"
+      >
+        <h2 id="produk-pilihan-title">Produk Pilihan</h2>
+        <div class="product-grid">
+          <article class="product-card">
+            <span class="product-badge">Terlaris</span>
+            <img src="assets/images/coffe mint.jpeg" alt="coffe mint" />
+            <h3>Coffee Mint</h3>
+            <p>coffee dengan perpaduan mint yang menenangkan.</p>
+            <p class="price">Rp25.000</p>
+            <div class="card-actions">
+              <a class="button" href="kontak.html">Tanya produk</a>
+              <a class="button" href="#harga-title">Tabel harga</a>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <span class="product-badge">Segar</span>
+            <img src="assets/images/cold coffe mint.jpeg" alt="cold coffe mint"/>
+            <h3>Cold Coffee Mint</h3>
+            <p>coffee dingin dengan perpaduan mint yang menyegarkan.</p>
+            <p class="price">Rp25.000</p>
+            <div class="card-actions">
+              <a class="button" href="kontak.html">Tanya produk</a>
+              <a class="button" href="#harga-title">Tabel harga</a>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <span class="product-badge">Eksklusif</span>
+            <img
+              src="assets/images/affogatto coffe.jpeg"
+              alt="Affogato Coffee"
+            />
+            <h3>Affogato Coffee</h3>
+            <p>Kopi dengan perpaduan es krim yang lembut.</p>
+            <p class="price">Rp28.000</p>
+            <div class="card-actions">
+              <a class="button" href="kontak.html">Tanya produk</a>
+              <a class="button" href="#harga-title">Tabel harga</a>
+            </div>
+          </article>
+        </div>
       </section>
       <section aria-labelledby="harga-title">
         <h2 id="harga-title">Daftar Harga</h2>
