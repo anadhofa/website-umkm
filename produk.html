@@ -30,7 +30,7 @@
     <main id="konten" class="page">
       <h1>Produk Cangkir Jeda</h1>
       <p></p>
-      <img src="assets/images/dekorasi tiga.jpeg" alt="" />
+      <img src="assets/images/dekorasi tiga.jpeg" width="640" height="360" loading="lazy" alt="" />
       <section aria-labelledby="kategori-title">
         <h2 id="kategori-title">Kategori Produk</h2>
         <ul>
@@ -48,7 +48,7 @@
         <div class="product-grid">
           <article class="product-card">
             <span class="product-badge">Terlaris</span>
-            <img src="assets/images/coffe mint.jpeg" alt="coffe mint" />
+            <img src="assets/images/coffe mint.jpeg" width="640" height="360" loading="lazy" alt="coffe mint" />
             <h3>Coffee Mint</h3>
             <p>coffee dengan perpaduan mint yang menenangkan.</p>
             <p class="price">Rp25.000</p>
@@ -60,7 +60,7 @@
 
           <article class="product-card">
             <span class="product-badge">Segar</span>
-            <img src="assets/images/cold coffe mint.jpeg" alt="cold coffe mint"/>
+            <img src="assets/images/cold coffe mint.jpeg" width="640" height="360" loading="lazy" alt="cold coffe mint"/>
             <h3>Cold Coffee Mint</h3>
             <p>coffee dingin dengan perpaduan mint yang menyegarkan.</p>
             <p class="price">Rp25.000</p>
@@ -74,6 +74,7 @@
             <span class="product-badge">Eksklusif</span>
             <img
               src="assets/images/affogatto coffe.jpeg"
+              width="640" height="360" loading="lazy"
               alt="Affogato Coffee"
             />
             <h3>Affogato Coffee</h3>
@@ -88,24 +89,21 @@
       </section>
       <section aria-labelledby="harga-title">
         <h2 id="harga-title">Daftar Harga</h2>
-        <table>
-          <caption>
-            Daftar produk Cangkir Jeda
-          </caption>
-          <thead>
-            <tr>
-              <th colspan="5" scope="colgroup">Menu Cangkir Jeda</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="col">Nama Produk</th>
-              <th scope="col">Kategori</th>
-              <th scope="col">Harga</th>
-              <th scope="col">Stok/Status</th>
-              <th scope="col">Keterangan</th>
-            </tr>
-          </tbody>
+        <div class="table-scroll" role="region" aria-labelledby="daftar-harga-caption" tabindex="0">
+          <table>
+            <caption id="daftar-harga-caption">Daftar harga produk Kopi Nusa</caption>
+            <thead>
+              <tr>
+                <th colspan="5" scope="colgroup">Menu Cangkir Jeda</th>
+              </tr>
+              <tr>
+                <th scope="col">Nama Produk</th>
+                <th scope="col">Kategori</th>
+                <th scope="col">Harga</th>
+                <th scope="col">Stok/Status</th>
+                <th scope="col">Keterangan</th>
+              </tr>
+            </thead>
 
           <tbody>
             <tr>
@@ -162,6 +160,7 @@
             </tr>
           </tbody>
         </table>
+        </div>
       </section>
     </main>
     <footer class="site-footer">

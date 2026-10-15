@@ -1,6 +1,43 @@
 const promoButton = document.querySelector("#promoButton");
 const hoursCard = document.querySelector("#hoursCard");
 const telephone = document.querySelector("#telephone");
+const navigation = document.querySelector(".nav");
+
+if (navigation) {
+  const navigationLinks = navigation.querySelector("ul");
+  const brand = navigation.querySelector(".brand");
+
+  if (navigationLinks && brand) {
+    const toggle = document.createElement("button");
+
+    toggle.className = "nav-toggle";
+    toggle.type = "button";
+    toggle.setAttribute("aria-label", "Buka menu navigasi");
+    toggle.setAttribute("aria-expanded", "false");
+    toggle.setAttribute("aria-controls", "menu-navigasi");
+    navigationLinks.id = "menu-navigasi";
+    navigation.classList.add("has-toggle");
+    brand.insertAdjacentElement("afterend", toggle);
+
+    toggle.addEventListener("click", () => {
+      const isOpen = toggle.getAttribute("aria-expanded") !== "true";
+      toggle.setAttribute("aria-expanded", String(isOpen));
+      toggle.setAttribute(
+        "aria-label",
+        isOpen ? "Tutup menu navigasi" : "Buka menu navigasi",
+      );
+      navigation.classList.toggle("is-open", isOpen);
+    });
+
+    navigationLinks.addEventListener("click", (event) => {
+      if (event.target instanceof Element && event.target.closest("a")) {
+        navigation.classList.remove("is-open");
+        toggle.setAttribute("aria-expanded", "false");
+        toggle.setAttribute("aria-label", "Buka menu navigasi");
+      }
+    });
+  }
+}
 
 if (promoButton) {
   promoButton.addEventListener("click", () => {
